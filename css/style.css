@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* font faces  */
 @font-face {
   font-family: "worksans-medium";
   src: url("../parallel/WorkSans-Medium.woff");
@@ -187,17 +187,21 @@ li a {
 .parallel-logo img {
   width: 42%;
 }
+/* customer image  */
 .customer-image {
   margin-top: 145px;
 }
+/* life works logo and image  */
 .life-works {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
+/* img  */
 .life-works img {
   width: fit-content;
 }
+/* final form  */
 .final-form {
   display: flex;
   flex-direction: column;
@@ -205,15 +209,18 @@ li a {
   justify-content: center;
   margin-top: 100px;
 }
+/* input  */
 input {
   width: 100%;
   padding: 20px;
   font-size: 20px;
 }
+/* h3 in final form  */
 .final-form h3 {
   font-family: "worksans-medium";
   font-size: 30px;
 }
+/* button in final button div  */
 .final-button button {
   width: 130px;
   padding: 20px;
@@ -221,65 +228,75 @@ input {
   border: 1px solid #000000;
   border-radius: 10px;
 }
+/* hover effect  */
 .final-button button:hover {
   background-color: #ffd560;
   cursor: pointer;
 }
-
-
+/* media querries for laptop screen  */
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 100%;
+    max-width: 540px;
     padding: 0 10px;
   }
 
   .logo {
     padding: 10px;
   }
-.life-works{
+  .life-works {
     padding: 0;
-}
+  }
   .nav-contents {
     flex-direction: column;
     align-items: center;
+		padding: 20px;
   }
-
+	.life-works img {
+		width: 50%;
+	}
+.life-works{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.final-button{
+	padding: 20px;
+}
   .main-section-contents {
     flex-direction: column;
   }
 
   .main-section-buttons {
-    gap: 10px;
-    justify-content: center;
+    margin: 0;
   }
 
   .frist-main-wrapper h2 {
     font-size: 24px;
   }
-  .customer-image{
+  .customer-image {
     margin-top: 0;
   }
-  .frist-main-wrapper{
+  .frist-main-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
   }
-.parallel-logo{
+  .parallel-logo {
     position: static;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
   .final-headings h2 {
     font-size: 30px;
   }
-.main-wrapping-contents{
+  .main-wrapping-contents {
     display: flex;
     flex-direction: column;
-    
-}
+  }
   .final-form {
     width: 100%;
     margin-top: 50px;
@@ -293,10 +310,124 @@ input {
     width: 100%;
     padding: 15px;
   }
-  .final-headings{
+  .final-headings {
     position: static;
   }
-  .main-section-buttons button{
-    width: 131px;
+  .main-section-buttons button {
+    width: 150px;
+    font-size: 16px;
+  }
+  ul,
+  li {
+    padding: 10px;
+  }
+}
+/* media querries for mobile devices  */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .logo {
+    padding: 10px;
+  }
+  .life-works {
+    padding: 0;
+  }
+  .nav-contents {
+    padding: 10px 0px;
+  }
+
+  .main-section-contents {
+    flex-direction: column;
+  }
+
+  .main-section-buttons {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .frist-main-wrapper h2 {
+    font-size: 24px;
+  }
+  .customer-image {
+    margin-top: 0;
+    width: 90%;
+  }
+  .second-main-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .second-main-wrapper img {
+		width: 100%;
+		margin-left: 20px;
+  }
+  .life-works img {
+    width: 50%;
+  }
+  .life-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .customer-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .frist-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .parallel-logo {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .final-headings h2 {
+    font-size: 30px;
+  }
+  .main-wrapping-contents {
+    display: flex;
+    flex-direction: column;
+  }
+  .final-form {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .final-form input {
+    width: 74%;
+  }
+  .final-button {
+    padding: 20px;
+  }
+  .final-button button {
+    width: 100%;
+    padding: 15px;
+  }
+  .final-headings {
+    position: static;
+  }
+  .main-section-buttons button {
+    width: 150px;
+    font-size: 16px;
+  }
+  ul,
+  li {
+    padding: 10px 8px;
+  }
+  ul,
+  li a {
+    font-size: 10px;
   }
 }
