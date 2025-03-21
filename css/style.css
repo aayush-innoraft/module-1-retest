@@ -208,6 +208,7 @@ li a {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+	gap: 10px;
 }
 /* input  */
 input {
@@ -249,20 +250,20 @@ input {
   .nav-contents {
     flex-direction: column;
     align-items: center;
-		padding: 20px;
+    padding: 20px;
   }
-	.life-works img {
-		width: 50%;
-	}
-.life-works{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.final-button{
-	padding: 20px;
-}
+  .life-works img {
+    width: 50%;
+  }
+  .life-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .final-button {
+    padding: 20px;
+  }
   .main-section-contents {
     flex-direction: column;
   }
@@ -300,12 +301,15 @@ input {
   .final-form {
     width: 100%;
     margin-top: 50px;
+    gap: 10px;
   }
 
   .final-form input {
     width: 50%;
   }
-
+  .final-headings {
+    margin-top: 20px;
+  }
   .final-button button {
     width: 100%;
     padding: 15px;
@@ -320,6 +324,9 @@ input {
   ul,
   li {
     padding: 10px;
+  }
+  .final-form {
+    margin-top: 0;
   }
 }
 /* media querries for mobile devices  */
@@ -364,8 +371,8 @@ input {
     justify-content: center;
   }
   .second-main-wrapper img {
-		width: 100%;
-		margin-left: 20px;
+    width: 100%;
+    margin-left: 20px;
   }
   .life-works img {
     width: 50%;
@@ -403,6 +410,7 @@ input {
   .final-form {
     width: 100%;
     margin-top: 10px;
+    gap: 10px;
   }
 
   .final-form input {
@@ -417,6 +425,7 @@ input {
   }
   .final-headings {
     position: static;
+    margin-top: 20px;
   }
   .main-section-buttons button {
     width: 150px;
